@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: 0;
+}
+
+body {
+    font-family: Segoe UI;
+}
+nav {
+    display: flex;
+    background-color: purple;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+}
+div.logo {
+    font-size: 30px;
+line-height: 35px;
+}
+nav ul {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+nav ul li a {
+    color: white;
+    font-size: 1em;
+    line-height: 35px;
+}
+nav ul li a:hover {
+    color: rgb(214, 214, 214);
+}
+
+
+
+.box {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 132, 255);
+    height: 40px;
+    border-radius: 100px;
+    padding: 10px;
+}
+.search-btn {
+    color: rgb(0, 132, 255);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(75, 75, 145);
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 10px;
+}
+
+.tengah {
+    position: fixed;
+    width: 56%;
+    height: 60%;
+    position: relative;
+    padding-top: 20px;
+    left: 180px;
+    padding: 100px;
+}
+.berita {
+    padding-left: 30px;
+    padding-bottom: 6px;
+}
+
+section div p.isian {
+    padding-top: 40px;
+    padding-bottom: 12px;
+}
+section div p{
+    padding-bottom: 12px;
+}
+section div img {
+    height: 300px;
+    width: 460px;
+}
+
+
+div img.foto {
+    height: 270px;
+    width: 180px;
+    padding-top: 12px;
+}
+.tengah1 {
+
+    width: 50%;
+    left: 170px;
+    position: relative;
+    padding: 100px;
+	
+}
+div p {
+    padding-top: 12px; 
+}
+
+
+.tengahmenu {
+    width: 50%;
+    height: 100%;
+    left: 190px;
+    position: relative;
+    padding: 100px;
+}
+section div h2 {
+    padding-top: 20px;
+}
+
+
+.vertical-menu {
+    width: 25%; 
+    height: 80%;
+    float: right;
+    position: relative;
+    padding-top: 110px;
+    padding-right: 40px;
+}   
+.vertical-menu a {
+    color: rgb(55, 18, 155); 
+    display: block;
+    padding: 12px;
+    font-family: arial; 
+}
+.vertical-menu a:hover {
+        color: rgb(2, 126, 241);     
+}
+.berita {
+    font-family: arial;
+    padding-left: 10px;
+}
+
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: silver;
+    padding-left: 10px;
+}
+.sidebar a{
+    display: block;
+    color: white;
+    padding: 16px;
+}
+.sidebar a:hover:not(.active) {
+    background-color: rgb(202, 239, 248);
+    color: rgb(0, 116, 224);
+  }
+
+
+label #sidebar_btn {
+    z-index: 1;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    left: 200px;
+    font-size: 20;
+    margin: 8px 0;
+    transition-property: color;
+}
+label #sidebar_btn:hover {
+    color: rgb(207, 240, 248);
+}
+
+#check:checked ~ .sidebar {
+    left: -200px;
+}
+#check {
+    display: none;
+}
+
+
+footer {
+background-color: purple;
+    height: 200px;
+    color: whitesmoke;
+    clear: both;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+footer strong {
+    font-size: 40px;
+}
+footer div.bawah ul li{
+    color: white;
+    padding-top: 16px;
+    font-size: 15px;
+	padding-left: 25px;
+}
+footer div.bawah ul li p {
+    font-size: 20px;
+}
+footer div.bawah ul li a {
+
+    color: white;
+}
+footer div.bawah ul li a:hover {
+    color: rgb(214, 214, 214);
+}
+
+img {
+    width: 600px;
+    
+}
+

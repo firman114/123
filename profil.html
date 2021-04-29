@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Data Pribadi</title>
+    </head>
+    
+
+    <input type="checkbox" id="check">
+
+    <body> 
+
+        <nav>
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="logo">
+                <h4>Data Pribadi</h4>
+            </div>
+            
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="list"><a href="list.html">list</a></li>
+                <li class="profile"><a href="profil.html">Profile</a></li>
+            </ul>
+        </nav>  
+
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="terpopuler.html">
+                        <span class="icon"><i class="fas fa-fire-alt"></i></span>
+                        <span class="title">Terpopuler</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="berita.html">
+                        <span class="icon"><i class="fas fa-newspaper"></i></span>
+                        <span class="title">Berita</span>
+                    </a>
+                </li>
+            </ul>
+        </div                    
+
+
+        <section>
+
+            <div class="vertical-menu">
+                
+                <strong class="berita"># Berita Populer</strong>
+                <a href="Aliansi.html">Aliansi Indonesia Diserang di Rise of Kingdoms</a>
+                <a href="TatentR.html">Talent Ricard</a>
+               
+            </div>    
+        </section>
+        
+        <div class="tengah1">
+            <h3 class="profil">Profil : </h3>
+            <img class="foto" src="114 Firman.jpg">
+			<p>Saya adalah seorang mahasiswa UMM dari jurusan Informatika.</p>
+			 <p>Nama : Firman </p>
+			<p>NIM : 201910370311114</p>
+            <p>Rise Of Kindoms adalah  Rise of Kingdom game building bergameplay RTS atau bisa dibilang Real Time Strategy, 
+			merupakan game yang awalnya bernama Rise of Civilization. Setelah di Rebrand menjadi Rise of Kingdom di tahun 2019 tak banyak perubahan dari segi 
+			core gameplay yang membuat banyak player veteran serta baru tetap nyaman memainkan game ini.</p>
+            <p>mohon maaf apa bila ada kesalahan dalam membuat web belajar ini..</p>
+          
+            <p>jangan lupa bahagia.</p>
+        </div>
+
+    <footer>
+        <div class="bawah">
+            <h5>Mode</h5>
+            <p>
+                <span class="icon" onclick="setDarkMode(false)"><button>Terang</button></span>
+                <span class="icon" onclick="setDarkMode(true)"><button>Gelap</button></span>
+            </p>
+    
+            <style>
+                #darkmode{
+                    background: rgb(37, 35, 35);
+                    color: white;
+                }
+            </style>
+    
+            <script>
+                if(localStorage.getItem('theme') == 'dark')
+                    setDarkMode(true)
+    
+    
+                function setDarkMode(isDark){
+                    if(isDark){
+                        document.body.setAttribute('id', 'darkmode')
+                        localStorage.setItem('theme', 'dark')
+    
+    
+                    }else{
+                        document.body.setAttribute('id', '')
+                        localStorage.removeItem('theme')
+    
+                    }
+    
+                }
+    
+    
+            </script>
+            <strong></strong>
+            <ul>
+                <li>
+                    <p>Kontak kami :</p>
+                    <a href="https://instagram.com/firman_4s?igshid=1vp3j37udh0bs">Instagram ||</a>
+                   
+                </li>
+            </ul>                    
+        </div>
+    </footer>    
+    </body>
+</html>

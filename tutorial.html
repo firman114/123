@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Rise Of Kingdoms</title>
+    </head>
+
+    <input type="checkbox" id="check">
+
+    <body> 
+        <nav>
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="logo">
+                <h4>Rise Of Kingdoms</h4>
+            </div>
+            
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="profile"><a href="profil.html">Profile</a></li>
+            </ul>
+        </nav>  
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="terpopuler.html">
+                        <span class="icon"><i class="fas fa-fire-alt"></i></span>
+                        <span class="title">Terpopuler</span>
+                    </a>
+                </li>
+             
+                <li>
+                    <a href="berita.html">
+                        <span class="icon"><i class="fas fa-newspaper"></i></span>
+                        <span class="title">Berita</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="box">
+            <input class="search" type="text" name"" placeholder="Search...">
+            <a href="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+
+        <section>
+            
+            <div class="vertical-menu">
+                
+                <strong class="berita"># Berita Populer</strong>
+                <a href="Aliansi.html">Aliansi Indonesia Diserang di Rise of Kingdoms</a>
+                <a href="TatentR.html">Talent Ricard</a>
+              
+            </div>    
+        </section>
+
+			<div class="tengah">
+			 <h2 class="tutorial">Tutorial Bermain Game Rise Of Kingdoms Bagi Pemula</h2>
+            <img src="tut.PNG">
+            <h2 class="tutorial"><p>Hizaku/ 11-mei-2019</p></p>Tutorial Bermain Game Rise Of Kingdoms Bagi PemulaBagaimana cara bermain game rise of kingdoms?
+				Jika tidak, Anda masih akan ketinggalan. Dan ketika benar-benar mengumpulkan hadiah dari misi sampingan, jangan selalu terburu-buru melakukannya.
+				Terkadang terutama jika Anda berperang melawan lawan yang aktif. Tidak masuk akal untuk mengumpulkan semua hadiah sumber daya jika Anda tidak dapat
+				melindungi mereka atau jika Anda tidak membutuhkannya.</p>
+
+				Anda tidak akan pernah memiliki terlalu banyak pasukan untuk pasukan Anda, jadi pastikan Anda terus melatih lebih banyak. Pelatihan membutuhkan waktu dan perang membutuhkan pasukan besar untuk dimenangkan, jadi lakukan saja tingkatkan 
+				bangunan penghasil pasukan Anda setiap kali Anda memiliki kesempatan dan latih terus menerus. 
+				Anda harus selalu melatih unit level tertinggi yang tersedia untuk Anda dan unit maksimum yang tersedia tidak ada alasan untuk melakukannya sebaliknya.
+				Selalu meneliti
+				Penelitian sama pentingnya karena ini membantu Anda mendapatkan pasukan yang lebih baik dan menghasilkan lebih banyak sumber daya,
+				kemudian mulai memberi Anda segala macam dorongan lainnya dalam permainan.
+				Saya selalu merekomendasikan untuk memaksimalkan penelitian Teknologi Militer di Akademi karena dorongan yang ditawarkan kepada pasukan adalah
+				yang benar-benar Anda butuhkan dan hanya kemudian beralih ke pohon keterampilan Teknologi Ekonomi jika Anda memiliki waktu tambahan. Ambil satu per satu dan Anda akan baik-baik saja. 
+				Demikianlah panduan bermain game rise of kingdoms semoga bermanfaat..</p>
+                    </div>
+
+    <footer>
+        <div class="bawah">
+            <h5>Mode</h5>
+		<p>
+			<span class="icon" onclick="setDarkMode(false)"><button>Terang</button></span>
+			<span class="icon" onclick="setDarkMode(true)"><button>Gelap</button></span>
+		</p>
+
+		<style>
+			#darkmode{
+				background: rgb(37, 35, 35);
+				color: white;
+			}
+		</style>
+
+		<script>
+			if(localStorage.getItem('theme') == 'dark')
+				setDarkMode(true)
+
+
+			function setDarkMode(isDark){
+				if(isDark){
+					document.body.setAttribute('id', 'darkmode')
+					localStorage.setItem('theme', 'dark')
+
+
+				}else{
+					document.body.setAttribute('id', '')
+					localStorage.removeItem('theme')
+
+				}
+
+			}
+
+
+		</script>
+            <strong>ROK</strong>
+            <ul>
+                <li>
+                    <p>Kontak kami :</p>
+                   <a href="https://instagram.com/firman_4s?igshid=1vp3j37udh0bs">Instagram ||</a>
+                 
+                </li>
+            </ul>                    
+        </div>
+    </footer>    
+    </body>
+</html>

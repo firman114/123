@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<ul>
+    <li class="home"><a href="index.html">Home</a></li>
+    <li class="list"><a href="list.html">list</a></li>
+    
+</ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Of Kingdoms </title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>Todo list</header>
+    <div class="inputField">
+      <input type="text" placeholder="Todo ">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+     
+    </ul>
+    <div class="footer">
+      <span>jumlah <span class="pendingTasks"></span> Data</span>
+      <button>Clear All</button>
+    </div>
+  </div>
+  <footer>
+    <div class="bawah">
+
+        <h5>Mode</h5>
+    <p>
+        <span class="icon" onclick="setDarkMode(false)"><button>Terang</button></span>
+        <span class="icon" onclick="setDarkMode(true)"><button>Gelap</button></span>
+    </p>
+
+    <style>
+        #darkmode{
+            background: rgb(37, 35, 35);
+            color: white;
+        }
+    </style>
+
+    <script>
+        if(localStorage.getItem('theme') == 'dark')
+            setDarkMode(true)
+
+
+        function setDarkMode(isDark){
+            if(isDark){
+                document.body.setAttribute('id', 'darkmode')
+                localStorage.setItem('theme', 'dark')
+
+
+            }else{
+                document.body.setAttribute('id', '')
+                localStorage.removeItem('theme')
+
+            }
+
+        }
+
+
+    </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

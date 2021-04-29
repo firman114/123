@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Rise Of Kingdoms</title>
+    </head>
+
+    <input type="checkbox" id="check">
+
+    <body> 
+        <nav>
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="logo">
+                <h4>Rise of Kingdoms</h4>
+            </div>
+            
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="profile"><a href="profil.html">Profile</a></li>
+            </ul>
+        </nav>  
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="terpopuler.html">
+                        <span class="icon"><i class="fas fa-fire-alt"></i></span>
+                        <span class="title">Terpopuler</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="berita.html">
+                        <span class="icon"><i class="fas fa-newspaper"></i></span>
+                        <span class="title">Berita</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="box">
+            <input class="search" type="text" name"" placeholder="Search...">
+            <a href="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+
+        <section></section>
+            
+            <div class="vertical-menu">
+                
+                <strong class="berita"># Berita Populer</strong>
+                <a href="Aliansi.html">Aliansi Indonesia Diserang di Rise of Kingdoms</a>
+                <a href="TatentR.html">Talent Ricard</a>
+                <a href="#">NONE</a>
+                <a href="#">NONE</a>
+            </div>    
+        </section>
+
+			<div class="tengah">
+            <h2 class="Aliansi">Aliansi Indonesia Diserang di Rise of Kingdoms</h2>
+            <img src="war.PNG">
+            <p class="isian">Kibezaka/01-02-2021. </p></p>Bagi sobat yang bermain game Rise of Kingdoms, mungkin belum mengetahui ada kabar mengenai aliansi Indonesia lagi dikepung oleh Alliance luar negeri.
+Jadi cerita singkatnya di server #1954 Kingdom tersebut berisi sedikit pemain berasal dari Indonesia, kebanyakan memang didominasi pemain luar negeri.
+
+Ada aliansi Indonesia disana, namanya WI54 (Warga Indonesia 54), kemarin Troops Farmer alias prajurit pemain Indonesia yang lagi farming diserang oleh sekelompok pasukan dari aliansi EYSI.
+EYSI ini bentukan pemain China, saat mencoba menyerang balik, WI54 dibantu oleh aliansi #SA1 (Southeast Asia) saja. Tapi yang sangat disayangkan ternyata EYSI memanggil aliansi dengan power lebih besar yaitu CN54, #1VK, DC54 dan DM54.
+Hasilnya WI54 dan #SA1 diserang kerumunan pemain dengan power yang besar. Sangat disayangkan penggunaan kata-kata menghina terhadap NKRI begitu menguat.
+Kingdom 1954 hampir hancur karena kejadian sepele itu. Pada dasarnya Rise of Kingdoms adalah pertarungan melawan Kingdom lain di Event KvK, bukan melawan aliansi satu sama lain dalam suatu server.
+Tetapi memang sedikit sentuhan saja sulit dihindari, kesalahpahaman akan berbuah fatal dan dapat menghancurkan suatu kingdom yang bersiap menuju KvK.
+Rencana Pengkhianatan di KvK
+EYSI sejatinya telah melanggar aturan di Kingdom 1954. Yaitu tidak diperbolehkan menyerang Kota / City Hall pemain lain dalam situasi apapun.
+Peraturan tersebut awalnya dibuat demi kebaikan bersama, supaya semua pemain di Kingdom 1954 sudah siap dari berbagai aspek ketika melakukan pertempuran melawan aliansi dari Kingdom tetangga di KvK. 
+Menyerang kota/City dapat menghambat pengembangan dan progres pemain, sehingga jika banyak terjadi hal serupa akan melemahkan kekuatan Kingdom secara keseluruhan dan mudah dikalahkan di KvK nanti.
+Namun ketika mereka melakukan penyerangan terhadap City milik member aliansi WI54 dan SA1, justru EYSI mendapatkan dukungan dari para pembuat aturan tersebut serta Leader aliansi lainnya.
+Ini menjadikan rencana berkhianat ketika KvK berlangsung semakin menguat. Pengkhianatan dalam event KvK sudah sering terjadi di banyak KvK sebelumnya bahkan Kingdom lain pun merasakannya.
+Maksud berkhianat dalam artian walau WI54 dan SA1 berasal dari Kingdom 1954, tetapi mereka berhak untuk tidak mendukung Kingdom asalnya di event Kingdom vs Kingdom mendatang.
+Jadi WI54 dan SA1 bisa putar balik dengan bergabung aliansi lain dari Kingdom 1953, 1955, 56, 57, 58, 59 atau 1960 dan menyerang siapa saja mereka yang memihak pada 1954.
+Kejadian ini tentu kurang menyenangkan, saya tahu banyak pemain asal Indonesia yang bermain game Rise of Kingdoms. Tetapi di server 1954 jumlahnya tidak signifikan, sehingga mudah dilemahkan.
+Inilah saatnya, panggilan terhadap semua pemain RoK asal Nusantara untuk bergabung atau migrasi ke Kingdom #1954 mari kita bela negara yang sudah dipermainkan mereka.
+.".</p>   
+        </div>
+
+    <footer>
+        <div class="bawah">
+            <h5>Mode</h5>
+		<p>
+			<span class="icon" onclick="setDarkMode(false)"><button>Terang</button></span>
+			<span class="icon" onclick="setDarkMode(true)"><button>Gelap</button></span>
+		</p>
+
+		<style>
+			#darkmode{
+				background: rgb(37, 35, 35);
+				color: white;
+			}
+		</style>
+
+		<script>
+			if(localStorage.getItem('theme') == 'dark')
+				setDarkMode(true)
+
+
+			function setDarkMode(isDark){
+				if(isDark){
+					document.body.setAttribute('id', 'darkmode')
+					localStorage.setItem('theme', 'dark')
+
+
+				}else{
+					document.body.setAttribute('id', '')
+					localStorage.removeItem('theme')
+
+				}
+
+			}
+
+
+		</script>
+            <strong>ROK</strong>
+            <ul>
+                <li>
+                    <p>Kontak kami :</p>
+                    <a href="">Instagram ||</a>
+                   )
+                </li>
+            </ul>                    
+        </div>
+    </footer>    
+    </body>
+</html>
